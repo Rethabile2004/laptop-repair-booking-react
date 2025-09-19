@@ -1,0 +1,198 @@
+.jobFormSection {
+  padding: 3rem 1.5rem;
+  background-color: #f4f4f4;
+}
+
+.jobContainer {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.jobContainer h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.jobContainer p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.jobForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.jobRow {
+  display: flex;
+  flex-direction: column;
+}
+
+.jobRow label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #444;
+}
+
+.jobRow input,
+.jobRow select {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.jobRow input:focus,
+.jobRow select:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+.jobSubmit {
+  padding: 0.9rem 2rem;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.jobSubmit:hover {
+  background-color: #005fa3;
+}
+
+
+/* ////////////////////////////// */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navLinks {
+  position: relative;
+}
+
+.navMenu {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.navMenu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navMenu li a:hover {
+  color: #00bcd4;
+}
+
+.menuToggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .navMenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #444;
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+    display: none;
+  }
+
+  .navMenu.open {
+    display: flex;
+  }
+
+  .menuToggle {
+    display: block;
+  }
+}
+
+/* /////////////////////////////////////////// */
+.footer{
+  background-color: #222;
+  color:white;
+  padding: 2rem 1.5rem;
+  font-size: 0.9rem;
+}
+
+.footerContainer{
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.footerBrand h2 {
+  margin-bottom: 0.5rem;
+  color: #00bcd4;
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.footerLinks a {
+  color: #eee;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footerLinks a:hover {
+  color: #00bcd4;
+}
+
+.footerSocial {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.footerBottom {
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  color: #aaa;
+} 
