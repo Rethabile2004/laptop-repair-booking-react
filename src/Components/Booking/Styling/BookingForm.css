@@ -1,0 +1,72 @@
+.consulatationFormSection {
+  padding: 3rem 1.5rem;
+  background-color: #f4f4f4;
+}
+
+.consulatationContainer {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.consulatationContainer h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.consulatationContainer p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.consulatationForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.consulatationRow {
+  display: flex;
+  flex-direction: column;
+}
+
+.consulatationRow label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #444;
+}
+
+.consulatationRow input,
+.consulatationRow select {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.consulatationRow input:focus,
+.consulatationRow select:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+.consulatationSubmit {
+  padding: 0.9rem 2rem;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.consulatationSubmit:hover {
+  background-color: #005fa3;
+}

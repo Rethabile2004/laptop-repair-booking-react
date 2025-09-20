@@ -13,6 +13,7 @@ function NavBar() {
               <li><Link to="/services">Services</Link></li>
               <li><Link to="/about">About</Link></li>
               <li><Link to="/contact">Contact</Link></li>
+              <li className='navBtn'>Book Now</li>
             </ul>
             <button
               className="menuToggle"

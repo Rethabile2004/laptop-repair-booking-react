@@ -17,9 +17,14 @@ function Footer() {
           </div>
 
           <div className="footerSocial">
-            <span>🔗</span>
-            <span>📘</span>
-            <span>🐦</span>
+            <img src="/src/assets/github.png" style={{ width: "40px", height: "40px" }} alt="" />
+            <img src="/src/assets/linkedIn.svg" style={{ width: "40px", height: "40px" }} alt="" />
+            <img src="/src/assets/whatsapp.png" style={{ width: "40px", height: "40px" }} alt="" />
+            {/* <div className="contact-socials">
+            <a href="#"><img src="/src/assets/github.png" style={{ width: "100px" }} alt="" /></a>
+            <a href="#"><img src="/src/assets/linkedIn.svg" style={{ width: "70px",height:"70px"  }} alt="" /></a>
+            <a href="#"><img src="/src/assets/whatsapp.png" style={{ width: "70px",height:"70px" }} alt="" /></a>
+          </div> */}
           </div>
         </div>
 
