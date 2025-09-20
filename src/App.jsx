@@ -3,7 +3,26 @@ import { useState } from 'react';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
-
+  const services = [
+    {
+      id: 1,
+      title: 'Consultation',
+      description: 'Book expert advice tailored to your needs.',
+      img: '/src/assets/solution.svg',
+    },
+    {
+      id: 2,
+      title: 'Therapy Sessions',
+      description: 'Professional support for mental wellness.',
+      img: '/src/assets/message.svg',
+    },
+    {
+      id: 3,
+      title: 'Career Coaching',
+      description: 'Guidance to help you reach your goals.',
+      img: 'src/assets/educate.svg',
+    },
+  ];
   return (
     <>
       <header className="navbar">
@@ -27,7 +46,44 @@ function App() {
           </nav>
         </div>
       </header>
-      <section className="jobFormSection">
+      <section className="hero">
+        <div className="hero-content">
+          <h1>Welcome to Your Next Booking Experience</h1>
+          <p>Professional services, seamless scheduling, and a user-friendly interface—all in one place.</p>
+          <button className="hero-btn">Book Now</button>
+        </div>
+      </section>
+      {/* //////////////////// */}
+      <section className="services">
+        <h2>Our Services</h2>
+        <div className="services-grid">
+          {services.map(service => (
+            <div key={service.id} className="service-card">
+              <img style={{ width: "120px" }} src={service.img} alt="" />
+              <h3>{service.title}</h3>
+              <p>{service.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+      <section className="contact">
+        <div className="contact-content">
+          <h2>Ready to Get Started?</h2>
+          <p>Reach out to us or book your first consultation today.</p>
+          <form className="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+          <div className="contact-socials">
+            <a href="#"><img src="/src/assets/github.png" style={{ width: "100px" }} alt="" /></a>
+            <a href="#"><img src="/src/assets/linkedIn.svg" style={{ width: "100px" }} alt="" /></a>
+            <a href="#"><img src="/src/assets/whatsapp.png" style={{ width: "100px" }} alt="" /></a>
+          </div>
+        </div>
+      </section>
+      {/* <section className="jobFormSection">
       <div className="jobContainer">
         <h2>Job Application</h2>
         <p>Please fill out your details to apply for the position.</p>
@@ -59,33 +115,34 @@ function App() {
           <button className="jobSubmit">Apply Now</button>
         </form>
       </div>
+    
     </section>
-      
-    <footer className="footer">
-      <div className="footerContainer">
-        <div className="footerBrand">
-          <h2>MySite</h2>
-          <p>Building better web experiences.</p>
+       */}
+      <footer className="footer">
+        <div className="footerContainer">
+          <div className="footerBrand">
+            <h2>MySite</h2>
+            <p>Building better web experiences.</p>
+          </div>
+
+          <div className="footerLinks">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+
+          <div className="footerSocial">
+            <span>🔗</span>
+            <span>📘</span>
+            <span>🐦</span>
+          </div>
         </div>
 
-        <div className="footerLinks">
-          <a href="#home">Home</a>
-          <a href="#services">Services</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+        <div className="footerBottom">
+          <p>&copy; {new Date().getFullYear()} MySite. All rights reserved.</p>
         </div>
-
-        <div className="footerSocial">
-          <span>🔗</span>
-          <span>📘</span>
-          <span>🐦</span>
-        </div>
-      </div>
-
-      <div className="footerBottom">
-        <p>&copy; {new Date().getFullYear()} MySite. All rights reserved.</p>
-      </div>
-    </footer>
+      </footer>
     </>
   )
 }
