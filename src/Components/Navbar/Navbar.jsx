@@ -1,7 +1,10 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false)
+  const navigate = useNavigate('');
   return (
     <>
       <header className="navbar">
@@ -11,9 +14,8 @@ function NavBar() {
             <ul className={isOpen ? 'navMenu open' : 'navMenu'}>
               <li><Link to="/">Home</Link></li>
               <li><Link to="/services">Services</Link></li>
-              <li><Link to="/about">About</Link></li>
               <li><Link to="/contact">Contact</Link></li>
-              <li className='navBtn'>Book Now</li>
+              <li className='navBtn' onClick={() => navigate('/booking-form')}>Book Now</li>
             </ul>
             <button
               className="menuToggle"

@@ -146,6 +146,7 @@
   color:#00bcd4;
   font-weight: 600;
   transition: color 0.3s ease;
+  cursor: pointer;
 }
 .navBtn:hover{
   color: #4e54c8;
