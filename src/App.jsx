@@ -10,7 +10,7 @@ import Contact from './Components/Home/Contact.jsx';
 import About from './Components/About/About.jsx';
 import ContactPage from './Components/Contact/ContactPage.jsx';
 import ServicePage from './Components/Services/ServicesPage.jsx';
-
+import ConsultationList from './Components/Booking/ConsultationList.jsx';
 function App() {
   return (
     <>
@@ -27,6 +27,7 @@ function App() {
                 <Route path='/about' element={<About />} />
                 <Route path='/contact' element={<ContactPage />} />
                 <Route path='/contact' element={<Contact />} />
+                <Route path='/consultation-list' element={<ConsultationList />} />                
               </Routes>
             </div>
             <Footer />

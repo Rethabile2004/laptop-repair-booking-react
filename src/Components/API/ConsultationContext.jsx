@@ -5,8 +5,9 @@ export const ConsultationContext=createContext();
 
 const ConsultationProvider=({children})=>{
     const [consultations,setConsultation]=useState([]);
-    const addConsultation=(name)=>{
-        setConsultation([...consultations,{name}]);
+    // const dateCreated=new Date();
+    const addConsultation=(fullName,email,phoneNumber,consReason,deviceType,condition,additionalInfor)=>{
+        setConsultation([...consultations,{fullName,email,phoneNumber,consReason,deviceType,condition,additionalInfor,/*dateCreated*/}]);
     }
     return (
         <ConsultationContext.Provider value={{consultations,addConsultation}}>
