@@ -36,7 +36,7 @@ function BookingForm() {
       setErrors(newErrors);
     } else {
       setErrors({});
-      window.alert("It's working!");
+      window.confirm("Once submitted changes will not be permitted. Are you sure you want to submit?");
       addConsultation(input.fullName,input.email,input.phoneNumber,input.consReason,input.deviceType,input.condition,input.additionalInfor);
       navigate('/success');
     }
