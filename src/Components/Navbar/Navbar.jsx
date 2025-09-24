@@ -15,6 +15,7 @@ function NavBar() {
               <li><Link to="/">Home</Link></li>
               <li><Link to="/services">Services</Link></li>
               <li><Link to="/contact">Contact</Link></li>
+              <li><Link to="/blogs">Blogs</Link></li>
               <li className='navBtn' onClick={() => navigate('/booking-form')}>Book Now</li>
             </ul>
             <button
