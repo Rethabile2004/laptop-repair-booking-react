@@ -15,7 +15,7 @@ function ConsultationList() {
 
   return (
     <section className="consultationList">
-      <h2>📋 Submitted Consultations ({consultations.length})</h2>
+      <h2> Submitted Consultations ({consultations.length})</h2>
       <ul>
         {consultations.map((c, index) => (
           <li key={index} className="consultationItem">

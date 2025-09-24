@@ -1,6 +1,6 @@
 import '/src/Components/Home/Services.css'
-function Services(){
-    const services = [
+function Services() {
+  const services = [
     {
       id: 1,
       title: 'Consultation',
@@ -20,9 +20,9 @@ function Services(){
       img: 'src/assets/educate.svg',
     },
   ];
-    return (
-        <>
-        <section className="services">
+  return (
+    <>
+      <section className="services">
         <h2>Our Services</h2>
         <div className="services-grid">
           {services.map(service => (
@@ -34,7 +34,7 @@ function Services(){
           ))}
         </div>
       </section>
-        </>
-    )
+    </>
+  )
 }
 export default Services
